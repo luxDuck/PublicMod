@@ -212,9 +212,12 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
           },
           craftTime: 120
         },
-    }
 ], {
   },
+  function Extra() {
+    this.draw=function(){
+      
+}
 });
 
 // end dual crafter
