@@ -212,8 +212,8 @@ const multi = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafte
           },
           craftTime: 120
         },
-],
-});
+    }
+]);
 
 // end dual crafter
 
