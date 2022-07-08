@@ -243,14 +243,7 @@ const multi = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafte
           craftTime: 110
         },
 ], {
-  },
-  function Extra() {
-    this.draw=function(){
-      let region1 = Core.atlas.find("adc-freezer-top")
-      Draw.rect(region1, this.x, this.y);
-      let region2 = Core.atlas.find("adc-freezer")
-      Draw.rect(region2, this.x, this.y);
-}
+    },
 });
 
 // end dual crafter
