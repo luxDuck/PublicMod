@@ -1,4 +1,8 @@
 cost: 1.7
 color: e35555
+name: Dualium
+description: By luxDuck. Hot and cold at the same time. Very unstable.
 charge: 2.5
+explosiveness: 1.3
+radioactivity: 1.6
 research: dual-crafter
