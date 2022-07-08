@@ -1,4 +1,5 @@
 const multiTurretLib = require("multiTurretType")
+const multiCrafterLib = require("multiCrafterType")
 
 // effects
 
@@ -178,5 +179,42 @@ const vulture = extend(PowerTurret, "vulture", {
 });
 
 // end vulture
+// dual crafter
+
+const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
+    {
+      input: {
+        liquids: ["cryofluid/3"],
+        power: 0.3
+      },
+      output: {
+        items: ["publicMod-cryocrystal/3"]
+      },
+      craftTime: 80
+    },
+    {
+          input: {
+            liquids: ["slag/3"],
+            power: 0.4
+          },
+          output: {
+            items: ["publicMod-pyrocrystal/3"]
+          },
+          craftTime: 80
+        },
+        {
+          input: {
+            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"]
+            power: 1
+          },
+          output: {
+            items: ["publicMod-dualium/1"]
+          },
+          craftTime: 120
+        },
+], {
+  },
+
+// end dual crafter
 
 // end luxDuck's content
