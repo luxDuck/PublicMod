@@ -181,38 +181,77 @@ const vulture = extend(PowerTurret, "vulture", {
 // end vulture
 // dual crafter
 
-const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
+const multi = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "freezer", [
     {
       input: {
-        liquids: ["cryofluid/3"],
+        liquids: ["water/3"],
         power: 0.3
       },
       output: {
-        items: ["publicMod-cryocrystal/3"]
+        items: ["adc-ice-cube/3"]
       },
       craftTime: 80
     },
     {
           input: {
-            liquids: ["slag/3"],
+            liquids: ["cryofluid/3"],
             power: 0.4
           },
           output: {
-            items: ["publicMod-pyrocrystal/3"]
+            items: ["adc-cryocube/3"]
           },
-          craftTime: 80
+          craftTime: 95
         },
         {
           input: {
-            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"],
-            power: 1
+            liquids: ["adc-ledonite-liquid/3.5"],
+            power: 0.8
           },
           output: {
-            items: ["publicMod-dualium/1"]
+            items: ["adc-ledonite-cube/2"]
           },
           craftTime: 120
         },
-]), {}
+        {
+          input: {
+            liquids: ["slag/6"],
+            power: 0.6
+          },
+          output: {
+            items: ["adc-cinderblock/3"]
+          },
+          craftTime: 120
+        },
+        {
+          input: {
+            liquids: ["oil/10"],
+            power: 1
+          },
+          output: {
+            items: ["coal/3"],
+            power: 3
+          },
+          craftTime: 160
+        },
+        {
+        input: {
+            liquids: ["adc-surge-mass/6"]
+          },
+          output: {
+            items: ["adc-surge-stone/1"]
+          },
+          craftTime: 110
+        },
+], {
+  },
+  function Extra() {
+    this.draw=function(){
+      let region1 = Core.atlas.find("adc-freezer-top")
+      Draw.rect(region1, this.x, this.y);
+      let region2 = Core.atlas.find("adc-freezer")
+      Draw.rect(region2, this.x, this.y);
+}
+});
 
 // end dual crafter
 
