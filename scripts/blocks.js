@@ -214,11 +214,7 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
         },
 ], {
   },
-  function Extra() {
-    this.draw=function(){
-      
-}
-});
+);
 
 // end dual crafter
 
