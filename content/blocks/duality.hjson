@@ -1,0 +1,16 @@
+size: 2
+reloadTime: 180
+shootSound: release
+name: Duality
+description: '''
+By luxDuck. A turret with 2 orbs on the sides which fire [red]hot[white] and [blue]cold[white] plasma. The main turret fires a plasma bolt which explodes into [red]hot[white] and [blue]cold[white] plasma balls.
+'''
+shootShake: 3
+category: turret
+research: dualium
+requirements: [
+  copper/700
+  lead/400
+  silicon/1050
+  phase-fabric/60
+]
