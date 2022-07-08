@@ -254,8 +254,8 @@ const dualityShot = extend(BasicBulletType, {
   lifetime: 60,
   shootEffect: Fx.purpleBlast,
   smokeEffect: Fx.smokeCloud,
-  frontColor = Color.valueOf("ffffff"),
-  backColor = Color.valueOf("985bb0"),
+  frontColor: Color.valueOf("ffffff"),
+  backColor: Color.valueOf("985bb0"),
   despawned(b){
         for(let i = 0; i < 5; i++){
             coldBolt.create(b, b.x, b.y, b.rotation() + Mathf.range(-50, 50), 1, 1);
