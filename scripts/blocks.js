@@ -179,42 +179,5 @@ const vulture = extend(PowerTurret, "vulture", {
 });
 
 // end vulture
-// dual crafter
-
-const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
-    {
-      input: {
-            liquids: ["cryofluid/3"],
-            power: 0.4
-          },
-          output: {
-            items: ["publicmod-cryocrystal/3"]
-          },
-          craftTime: 80
-        },
-        input: {
-            liquids: ["water/3"],
-            power: 0.4
-          },
-          output: {
-            items: ["publicmod-pyrocrystal/3"]
-          },
-          craftTime: 80
-        },
-        {
-          input: {
-            items: ["publicmod-cryocrystal/3", "publicmod-pyrocrystal/3", "lead/6"],
-            power: 0.8
-          },
-          output: {
-            items: "publicmod-dualium/1"
-          },
-          craftTime: 120
-        },
-], {
-  },
-);
-
-// end dual crafter
 
 // end luxDuck's content
