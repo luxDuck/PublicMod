@@ -181,7 +181,7 @@ const vulture = extend(PowerTurret, "vulture", {
 // end vulture
 // dual crafter
 
-const multi = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "freezer", [
+const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
     {
           input: {
             liquids: ["cryofluid/3"],
