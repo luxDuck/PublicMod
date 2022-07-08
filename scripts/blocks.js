@@ -184,15 +184,6 @@ const vulture = extend(PowerTurret, "vulture", {
 const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
     {
       input: {
-        liquids: ["water/3"],
-        power: 0.3
-      },
-      output: {
-        items: ["adc-ice-cube/3"]
-      },
-      craftTime: 80
-    },
-    input: {
             liquids: ["cryofluid/3"],
             power: 0.4
           },
