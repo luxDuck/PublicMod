@@ -206,7 +206,7 @@ const coldBolt = extend(BasicBulletType, {
   height: 4.5,
   homingPower: 0.6,
   frontColor: Color.valueOf("ffffff"),
-  backColor: Color.valueOf("80a9ff),
+  backColor: Color.valueOf("80a9ff"),
   lifetime: 50,
 });
 
@@ -229,7 +229,7 @@ const hotBolt = extend(BasicBulletType, {
   height: 4.5,
   homingPower: 0.6,
   frontColor: Color.valueOf("ffffff"),
-  backColor: Color.valueOf("e56666),
+  backColor: Color.valueOf("e56666"),
   lifetime: 50,
 });
 
