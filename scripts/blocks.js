@@ -204,7 +204,7 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
         },
         {
           input: {
-            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"]
+            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"],
             power: 1
           },
           output: {
