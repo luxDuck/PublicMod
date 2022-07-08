@@ -188,7 +188,7 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
             power: 0.4
           },
           output: {
-            items: ["publicMod-cryocrystal/3"]
+            items: ["publicmod-cryocrystal/3"]
           },
           craftTime: 80
         },
@@ -198,17 +198,17 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
             power: 0.4
           },
           output: {
-            items: ["publicMod-pyrocrystal/3"]
+            items: ["publicmod-pyrocrystal/3"]
           },
           craftTime: 80
         },
         {
           input: {
-            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"],
+            items: ["publicmod-cryocrystal/3", "publicmod-pyrocrystal/3", "lead/6"],
             power: 0.8
           },
           output: {
-            items: "publicMod-dualium/1"
+            items: "publicmod-dualium/1"
           },
           craftTime: 120
         },
