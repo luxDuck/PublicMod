@@ -183,64 +183,34 @@ const vulture = extend(PowerTurret, "vulture", {
 
 const multi = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "freezer", [
     {
-      input: {
-        liquids: ["water/3"],
-        power: 0.3
-      },
-      output: {
-        items: ["adc-ice-cube/3"]
-      },
-      craftTime: 80
-    },
-    {
           input: {
             liquids: ["cryofluid/3"],
             power: 0.4
           },
           output: {
-            items: ["adc-cryocube/3"]
+            items: ["publicMod-cryocrystal/3"]
           },
-          craftTime: 95
+          craftTime: 80
         },
         {
           input: {
-            liquids: ["adc-ledonite-liquid/3.5"],
+            liquids: ["slag/3"],
+            power: 0.4
+          },
+          output: {
+            items: ["publicMod-pyrocrystal/3"]
+          },
+          craftTime: 80
+        },
+        {
+          input: {
+            items: ["publicMod-cryocrystal/3", "publicMod-pyrocrystal/3", "lead/6"],
             power: 0.8
           },
           output: {
-            items: ["adc-ledonite-cube/2"]
+            items: "publicMod-dualium/1"
           },
           craftTime: 120
-        },
-        {
-          input: {
-            liquids: ["slag/6"],
-            power: 0.6
-          },
-          output: {
-            items: ["adc-cinderblock/3"]
-          },
-          craftTime: 120
-        },
-        {
-          input: {
-            liquids: ["oil/10"],
-            power: 1
-          },
-          output: {
-            items: ["coal/3"],
-            power: 3
-          },
-          craftTime: 160
-        },
-        {
-        input: {
-            liquids: ["adc-surge-mass/6"]
-          },
-          output: {
-            items: ["adc-surge-stone/1"]
-          },
-          craftTime: 110
         },
 ], {
     },
