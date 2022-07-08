@@ -192,8 +192,7 @@ const dualCrafter = multiCrafterLib.MultiCrafter(GenericCrafter, GenericCrafter.
           },
           craftTime: 80
         },
-        {
-          input: {
+        input: {
             liquids: ["slag/3"],
             power: 0.4
           },
