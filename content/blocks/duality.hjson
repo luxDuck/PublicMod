@@ -7,7 +7,7 @@ By luxDuck. A turret with 2 orbs on the sides which fire [red]hot[white] and [bl
 '''
 shootShake: 3
 category: turret
-research: dualium
+research: phase-weaver
 requirements: [
   copper/700
   lead/400
