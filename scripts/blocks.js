@@ -1,5 +1,5 @@
-const multiTurretLib = require("multiTurretType")
-const multiCrafterLib = require("multiCrafterType")
+const multiTurretLib = require("multiTurretType");
+const multiCrafterLib = require("multiCrafterType");
 
 // effects
 
