@@ -210,7 +210,7 @@ const coldBolt = extend(BasicBulletType, {
   lifetime: 50,
 });
 
-const coldOrb = multiTurretLib.newWeapon(coldBolt, "adc-unoM");
+const coldOrb = multiTurretLib.newWeapon(coldBolt, "publicmod-duality-cold");
 unoMount.reloadTime = 40;
 unoMount.ammoPerShot = 1;
 unoMount.x = -2.75;
@@ -233,7 +233,7 @@ const hotBolt = extend(BasicBulletType, {
   lifetime: 50,
 });
 
-const hotOrb = multiTurretLib.newWeapon(coldBolt, "adc-unoM");
+const hotOrb = multiTurretLib.newWeapon(coldBolt, "publicmod-duality-hot");
 unoMount.reloadTime = 40;
 unoMount.ammoPerShot = 1;
 unoMount.x = 2.75;
