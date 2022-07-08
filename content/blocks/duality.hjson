@@ -1,4 +1,5 @@
 size: 2
+type: PowerTurret
 reloadTime: 180
 shootSound: release
 name: Duality
