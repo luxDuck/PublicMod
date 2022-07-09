@@ -1,0 +1,60 @@
+type: ItemTurret
+size: 2
+health: 240
+name: Barrage
+description: By luxDuck. Fires bullets out of two barrels.
+range: 120
+alternate: true
+spread: 5.5
+shots: 2
+reloadTime: 25
+inaccuracy: 5
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+ammoUseEffect: casing1
+ammoTypes: {
+  copper: {
+    type: BasicBulletType
+    damage: 20
+    speed: 2
+    lifetime: 60
+  }
+  silicon: {
+    type: BasicBulletType
+    damage: 17
+    speed: 2
+    homingPower: 0.08
+    homingRange: 16
+    lifetime: 60
+    ammoMultiplier: 4
+    reloadMultiplier: 1.4
+    frontColor: b0b9bf
+    backColor: 6e7080
+  }
+  pyratite: {
+    type: BasicBulletType
+    damage: 28
+    speed: 2
+    lifetime: 60
+    ammoMultiplier: 4
+    frontColor: f68021
+    backColor: f8ad42
+    status: burning
+    makeFire: true
+    incendChance: 0.5
+    despawnEffect: {
+      type: ParticleEffect
+      lifetime: 20
+      length: 12
+      colorFrom: f68021
+      colorTo: f8ad42
+    }
+  }
+}
+category: turret
+research: duo
+requirements: [
+  copper/45
+  lead/20
+  graphite/50
+]
