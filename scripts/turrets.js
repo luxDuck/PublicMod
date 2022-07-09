@@ -254,7 +254,7 @@ quark.buildType = () => extend(PowerTurret.PowerTurretBuild, quark, {
             Sounds.spark.at(this)
         }
         else{
-            if(this.creload < 12){this.creload += 1} 
+            if(this.creload < 10){this.creload += 1} 
         }
     },
 });
