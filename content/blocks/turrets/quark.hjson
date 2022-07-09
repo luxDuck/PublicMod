@@ -1,7 +1,7 @@
 targetAir: true
 size: 2
 health: 1450
-reloadTime: 180
+reloadTime: 70
 range: 150
 shootSound: laser
 powerUse: 6
