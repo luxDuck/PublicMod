@@ -1,4 +1,4 @@
-# ![image](https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png)
+# <img src="https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png)" alt="" width="10vw" height="10vw" align="center">
 
 Star the mod and I will add you as a contributor.
 
@@ -10,7 +10,7 @@ Do not make malicious content, or content that ruins gameplay. - Action for brea
 
 Inside the description of your content, please label your username. e.g: By randomcoder777. - Action for breaking rule: Friendly reminder to add your username
 
-.json, .hjson, and .js are welcome in this mod!
+`.json`, `.hjson`, and `.js` are welcome in this mod!
 
 Please try to help other contributors if they need help with coding!
 
@@ -18,9 +18,9 @@ Please try to help other contributors if they need help with coding!
 
 # Contributors
 
-luxDuck - Creator
+[@luxDuck](github.com/luxduck) - Creator
 
-12three7 - Has not accepted invite yet // update 9/7/22, i have accepted your invitation
+[@12three7](github.com/12three7) - Has not accepted invite yet // update 9/7/22, i have accepted your invitation - 1237
 
 # Banned
 
