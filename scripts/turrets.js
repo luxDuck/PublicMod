@@ -17,7 +17,7 @@ const ripDiskBack = extend(BasicBulletType, {
     pierce: true,
 
     despawnEffect: effects.blueBlast,
-    hitEffect: effects.blueBlast,
+    hitEffect: Fx.hitLancer,
     frontColor: Color.valueOf("ffffff"),
     backColor: Color.valueOf("33AEDA"),
 });
@@ -35,7 +35,7 @@ const ripDisk = extend(BasicBulletType, {
     pierce : true,
 
     despawnEffect : effects.blueBlast,
-    hitEffect: effects.blueBlast,
+    hitEffect: Fx.hitLancer,
     shootEffect: effects.blueBlast,
     frontColor : Color.valueOf("ffffff"),
     backColor  : Color.valueOf("33AEDA"),
@@ -51,6 +51,55 @@ const rip = extend(PowerTurret, "rip", {
 });
 
 // end rip
+// shred
+
+const shredDiskBack = extend(BasicBulletType, {
+    width: 26,
+    height: 26,
+
+    damage: 120,
+    speed: 3,
+    shrinkY: 0,
+    spin: -3,
+    lifetime : 40,
+    sprite: "large-bomb",
+    pierce: true,
+
+    despawnEffect: effects.blueBlast,
+    hitEffect: Fx.hitLancer,
+    frontColor: Color.valueOf("ffffff"),
+    backColor: Color.valueOf("33AEDA"),
+});
+
+const shredDisk = extend(BasicBulletType, {
+    width : 26,
+    height: 26,
+
+    damage : 120,
+    speed : 3,
+    shrinkY: 0,
+    spin: 3,
+    lifetime : 40,
+    sprite: "large-bomb",
+    pierce : true,
+
+    despawnEffect : effects.none,
+    hitEffect: Fx.hitLancer,
+    shootEffect: effects.blueBlast,
+    frontColor : Color.valueOf("ffffff"),
+    backColor  : Color.valueOf("33AEDA"),
+
+    despawned(b){
+        shredDiskBack.create(b, b.x, b.y, b.rotation() - 180, 1, 1);
+    }
+});
+
+const shred = extend(PowerTurret, "shred", {
+    shootType: ripDisk,
+    recoilAmount: 6,
+});
+
+// end shred
 // crow
 
 const crowLaser = extend(LaserBulletType, {
