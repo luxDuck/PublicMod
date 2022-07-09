@@ -35,11 +35,11 @@ const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericC
     },
       function Extra(){
       this.draw=function(){
-      let region1 = Core.atlas.find("publicmod-dual-crafter-top")
+      let region1 = Core.atlas.find("publicmod-dual-crafter-bottom")
       Draw.rect(region1, this.x, this.y);
       let region2 = Core.atlas.find("publicmod-dual-crafter")
       Draw.rect(region2, this.x, this.y)
-      let region3 = Core.atlas.find("publicmod-dual-crafter-bottom")
+      let region3 = Core.atlas.find("publicmod-dual-crafter-top")
       Draw.rect(region3, this.x, this.y);
 }
 });
