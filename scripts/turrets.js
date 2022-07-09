@@ -208,5 +208,57 @@ const vulture = extend(PowerTurret, "vulture", {
 });
 
 // end vulture
+// quark
+
+const quarkLightningBranch = extend(LightningBulletType, {
+    lightningColor: Color.valueOf("f3e979"),
+    lightningLength: 10,
+    lightningLengthRand: 3,
+    lightningAngleRand: 7,
+    lightningDamage: 60,
+});
+
+const quarkLightning = extend(LightningBulletType, {
+    lightningColor: Color.valueOf("f3e979"),
+    lightningLength: 23,
+    lightningLengthRand: 8,
+    lightningAngleRand: 15,
+    lightningDamage: 170,
+});
+
+const quarkBeam = extend(LaserBulletType, {
+    colors : [Color.valueOf("d99f6b"),Color.valueOf("f3e979"),Color.valueOf("ffffff")],
+    hitEffect : Fx.instHit,
+    damage: 300,
+    absorbable: false,
+    hitSize : 32,
+    lifetime : 20,
+    length : 230,
+    width : 30,
+    sideAngle: 20,
+    lightningType: quarkLightningBranch,
+});
+
+const quark = extend(PowerTurret, "quark", {});
+quark.buildType = () => extend(PowerTurret.PowerTurretBuild, quark, {
+    shootType: quarkBeam,
+    creload : 0,
+    updateTile(){
+        this.super$updateTile();
+
+        if(this.isShooting() && this.power.status > 1 && this.hasAmmo() && this.creload >= 12){
+            this.creload = 0
+            quarkLightning.create(this, this.team, this.x, this.y, this.rotation + Mathf.range(-30, 30))
+            Fx.instHit.at(this.x, this.y)
+            Sounds.spark.at(this)
+        }
+        else{
+            if(this.creload < 12){this.creload += 1} 
+        }
+    },
+});
+
+
+// end quark
 
 // end luxDuck's content
