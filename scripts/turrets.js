@@ -239,9 +239,10 @@ const quarkBeam = extend(LaserBulletType, {
     lightningType: quarkLightningBranch,
 });
 
-const quark = extend(PowerTurret, "quark", {});
-quark.buildType = () => extend(PowerTurret.PowerTurretBuild, quark, {
+const quark = extend(PowerTurret, "quark", {
     shootType: quarkBeam,
+});
+quark.buildType = () => extend(PowerTurret.PowerTurretBuild, quark, {
     creload : 0,
     updateTile(){
         this.super$updateTile();
