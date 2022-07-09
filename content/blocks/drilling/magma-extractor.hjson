@@ -3,6 +3,7 @@ itemCapacity: 10
 result: liquid-magma
 size: 2
 hasPower: true
+type: Fracker
 hasLiquids: true
 hasItems: true
 pumpAmount: 0.05
