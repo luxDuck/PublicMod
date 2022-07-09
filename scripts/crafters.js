@@ -1,5 +1,4 @@
 const multiLib = require("multi-lib/library");
-const effects = require("effects");
 
 const dualCrafter = multiLib.MultiCrafter(GenericCrafter, GenericCrafter.GenericCrafterBuild, "dual-crafter", [
     {
