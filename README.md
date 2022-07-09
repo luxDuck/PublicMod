@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png" alt="" width="500" height="500" align="center">
+# <img src="https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png" alt="" width="300" height="300" align="center">
 
 Star the mod and I will add you as a contributor.
 
