@@ -1,0 +1,10 @@
+color: ff795e
+cost: 1.8
+research: dual-crafter
+name: Dualium
+description: '''
+By luxDuck. Hot and cold at the same time. Highly unstable and will explode without notice. Emits high amounts of radiation, please handle with care.
+'''
+explosiveness: 2.5
+radioactivity: 3
+flammability: 1.6
