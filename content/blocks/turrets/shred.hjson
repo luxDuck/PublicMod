@@ -1,0 +1,22 @@
+targetAir: true
+size: 4
+health: 1450
+reloadTime: 180
+range: 150
+shootSound: shotgun
+powerUse: 6.7
+name: Shred
+description: By luxDuck. Fires a big energy disk that loops around back to the turret.
+shootShake: 5
+category: turret
+research: rip
+acceptCoolant: false
+coolantMultiplier: 0
+canOverdrive: false
+requirements: [
+  copper/700
+  lead/400
+  graphite/230
+  silicon/700
+  titanium/550
+]
