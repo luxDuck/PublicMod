@@ -6,7 +6,7 @@ range: 150
 shootSound: shotgun
 powerUse: 6.7
 name: Shred
-description: By luxDuck. Fires a big energy disk that loops around back to the turret.
+description: By luxDuck. An upgrade to Rip. Fires a big energy disk that loops around back to the turret.
 shootShake: 5
 category: turret
 research: rip
