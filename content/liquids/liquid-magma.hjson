@@ -6,4 +6,4 @@ name: Magma
 description: Molten rock extracted from deep in the planet.
 effect: melting
 color: ff7d3c
-research: e
+research: magma-extractor
