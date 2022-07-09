@@ -162,7 +162,6 @@ const hawkOrb = extend(MissileBulletType, {
     sprite: "circle-bullet",
     pierce : true,
 
-    despawnEffect : effects.redBlast,
     trailColor: Color.valueOf("e56666"),
     trailWidth: 3,
     trailLength: 30,
