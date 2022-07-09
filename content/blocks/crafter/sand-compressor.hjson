@@ -18,6 +18,7 @@ outputItem: scrap/2
 updateEffect: pulverize
 craftEffect: none
 category: crafting
+hasLiquid: false
 research: pulverizer
 requirements: [
   copper/70
