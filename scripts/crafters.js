@@ -30,7 +30,7 @@ const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericC
             items:["publicmod-item-dualium/1"],
         },
     craftTime: 160
-    };
+    },
 ],{
     },
 function Extra() {
