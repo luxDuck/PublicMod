@@ -4,3 +4,4 @@ description: A mod that luxDuck and other people are working on. Star the mod fo
 author: luxDuck
 version: 0.1.0
 minGameVersion: 130.1
+dependencies:["multi-lib"]
