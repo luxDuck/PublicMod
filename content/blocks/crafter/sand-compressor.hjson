@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 2
+drawer: drawAnimation
+craftTime: 90
+name: Sand Compressor
+description: By luxDuck. Compresses sand into scrap.
+consumes: {
+  power: 4
+  items: {
+    items: [
+      sand/6
+    ]
+  }
+}
+outputItem: scrap/2
+updateEffect: pulverize
+craftEffect: none
+category: crafting
+research: pulverizer
+requirements: [
+  copper/70
+  lead/60
+  titanium/30
+  graphite/60
+]

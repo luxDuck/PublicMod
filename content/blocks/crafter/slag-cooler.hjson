@@ -1,0 +1,23 @@
+type: GenericCrafter
+size: 2
+drawer: drawRotator
+craftTime: 30
+name: Slag Cooler
+description: By luxDuck. Cools down slag back to scrap.
+consumes: {
+  power: 1.5
+  liquid: {
+    liquid: slag
+    amount: 0.2
+  }
+}
+outputItem: scrap/1
+updateEffect: none
+craftEffect: none
+category: crafting
+research: melter
+requirements: [
+  copper/70
+  lead/60
+  graphite/90
+]
