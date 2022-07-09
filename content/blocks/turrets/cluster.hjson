@@ -1,0 +1,42 @@
+type: ItemTurret
+size: 2
+targetAir: false
+name: Cluster
+description: Fires a cluster of artillery shells.
+range: 240
+health: 500
+inaccuracy: 7
+reloadTime: 70
+recoilAmount: 3
+velocityInaccuracy: 0.1
+shots: 4
+shootEffect: shootBig
+smokeEffect: shootBigSmoke
+shootSound: artillery
+shootShake: 0.75
+ammoUseEffect: casing2
+ammoTypes: {
+  graphite: {
+    type: ArtilleryBulletType
+    damage: 30
+    splashDamage: 33
+    splashDamageRadius: 28
+    speed: 3
+    lifetime: 80
+    width: 15
+    height: 17
+    hitShake: 1.5
+    frontColor: fd8e8e
+    backColor: ad4244
+    despawnEffect: blastExplosion
+  }
+  pyratite: artilleryIncendiary
+  blast-compound: artilleryExplosive
+}
+category: turret
+research: hail
+requirements: [
+  copper/80
+  graphite/70
+  plastanium/80
+]
