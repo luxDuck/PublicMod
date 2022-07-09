@@ -93,7 +93,7 @@ const shredDisk = extend(BasicBulletType, {
 });
 
 const shred = extend(PowerTurret, "shred", {
-    shootType: ripDisk,
+    shootType: shredDisk,
     recoilAmount: 6,
 });
 
