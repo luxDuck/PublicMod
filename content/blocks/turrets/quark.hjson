@@ -1,0 +1,21 @@
+targetAir: true
+size: 2
+health: 1450
+reloadTime: 180
+range: 150
+shootSound: laser
+powerUse: 6
+name: Quark
+description: By luxDuck. Fires a big laser and small lightning bolts.
+shootShake: 3
+category: turret
+research: surge-alloy
+acceptCoolant: false
+coolantMultiplier: 0
+canOverdrive: false
+requirements: [
+  titanium/300
+  graphite/600
+  silicon/400
+  surge-alloy/600
+]
