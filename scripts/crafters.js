@@ -40,7 +40,7 @@ function Extra() {
       let region2 = Core.atlas.find("publicmod-dual-crafter")
       Draw.rect(region2, this.x, this.y)
       let region3 = Core.atlas.find("publicmod-dual-crafter-bottom")
-      Draw.rect(region2, this.x, this.y);
+      Draw.rect(region3, this.x, this.y);
 }
 {},
 });
