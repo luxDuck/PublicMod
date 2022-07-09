@@ -1,0 +1,25 @@
+liquidCapacity: 20
+itemCapacity: 10
+result: liquid-magma
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+pumpAmount: 0.05
+updateEffect: pulverize
+name: Magma Extractor
+description: Drills deep into the mantle, and pulls out magma. Requires cryofluid for coolant.
+updateEffectChance: 0.1
+consumes: {
+power: 5.3
+liquid: {
+liquid: cryofluid
+amount: 0.7
+}
+}
+requirements: [
+titanium/150
+silicon/200
+metaglass/50
+]
+category: production
