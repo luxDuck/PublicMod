@@ -1,5 +1,3 @@
-const effects = require("effects");
-
 // luxDuck's content
 
 // rip
@@ -16,7 +14,7 @@ const ripDiskBack = extend(BasicBulletType, {
     sprite: "large-bomb",
     pierce: true,
 
-    despawnEffect: effects.blueBlast,
+    despawnEffect: Fx.hitLancer,
     hitEffect: Fx.hitLancer,
     frontColor: Color.valueOf("ffffff"),
     backColor: Color.valueOf("33AEDA"),
@@ -34,9 +32,9 @@ const ripDisk = extend(BasicBulletType, {
     sprite: "large-bomb",
     pierce : true,
 
-    despawnEffect : effects.blueBlast,
+    despawnEffect: Fx.hitLancer,
     hitEffect: Fx.hitLancer,
-    shootEffect: effects.blueBlast,
+    shootEffect: Fx.hitLancer,
     frontColor : Color.valueOf("ffffff"),
     backColor  : Color.valueOf("33AEDA"),
 
@@ -65,7 +63,7 @@ const shredDiskBack = extend(BasicBulletType, {
     sprite: "large-bomb",
     pierce: true,
 
-    despawnEffect: effects.blueBlast,
+    despawnEffect: Fx.hitLancer,
     hitEffect: Fx.hitLancer,
     frontColor: Color.valueOf("ffffff"),
     backColor: Color.valueOf("33AEDA"),
@@ -83,9 +81,9 @@ const shredDisk = extend(BasicBulletType, {
     sprite: "large-bomb",
     pierce : true,
 
-    despawnEffect : effects.none,
+    despawnEffect: Fx.hitLancer,
     hitEffect: Fx.hitLancer,
-    shootEffect: effects.blueBlast,
+    shootEffect: Fx.hitLancer,
     frontColor : Color.valueOf("ffffff"),
     backColor  : Color.valueOf("33AEDA"),
 
@@ -125,7 +123,7 @@ crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
         if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 30){
             this.creload = 0
             crowLaser.create(this, this.team, this.x, this.y, this.rotation)
-            effects.redBlast.at(this.x, this.y)
+            Fx.blastExplosion.at(this.x, this.y)
             Sounds.bigshot.at(this)
         }
         else{
@@ -171,7 +169,8 @@ const hawkOrb = extend(MissileBulletType, {
     weaveScale: 0,
     weaveMag: 0,
     trailChance: 1,
-    hitEffect: effects.redBlast,
+    hitEffect: Fx.massiveExplosion,
+    despawnEffect: Fx.massiveExplosion,
     frontColor : Color.valueOf("e56666"),
     backColor  : Color.valueOf("e56666"),
 
