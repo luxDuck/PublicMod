@@ -22,6 +22,8 @@ Please try to help other contributors if they need help with coding!
 
 [@12three7](github.com/12three7) - Has recently accepted invite
 
+[@WillBrAfton](github.com/WillBrAfton) - Awaiting response to invite
+
 # Banned
 
 Nobody!
