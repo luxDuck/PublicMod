@@ -210,23 +210,7 @@ const vulture = extend(PowerTurret, "vulture", {
 // end vulture
 // quark
 
-const quarkLightningBranch = extend(LightningBulletType, {
-    lightningColor: Color.valueOf("f3e979"),
-    lightningLength: 10,
-    lightningLengthRand: 3,
-    lightningAngleRand: 7,
-    lightningDamage: 60,
-});
-
-const quarkLightning = extend(LightningBulletType, {
-    lightningColor: Color.valueOf("f3e979"),
-    lightningLength: 23,
-    lightningLengthRand: 8,
-    lightningAngleRand: 15,
-    lightningDamage: 170,
-});
-
-const quarkBeam = extend(LaserBulletType, {
+const quarkLaser = extend(LaserBulletType, {
     colors : [Color.valueOf("d99f6b"),Color.valueOf("f3e979"),Color.valueOf("ffffff")],
     hitEffect : Fx.instHit,
     damage: 300,
@@ -236,29 +220,18 @@ const quarkBeam = extend(LaserBulletType, {
     length : 230,
     width : 30,
     sideAngle: 20,
-    lightningType: quarkLightningBranch,
+    lightningColor: Color.valueOf("f3e979"),
+    lightningLength: 23,
+    lightningLengthRand: 8,
+    lightningAngleRand: 15,
+    lightningDamage: 170,
+    lightningDelay: 0.07,
+    lightningSpacing: 6,
 });
 
 const quark = extend(PowerTurret, "quark", {
-    shootType: quarkBeam,
+    shootType: quarkLaser,
 });
-quark.buildType = () => extend(PowerTurret.PowerTurretBuild, quark, {
-    creload : 0,
-    updateTile(){
-        this.super$updateTile();
-
-        if(this.isShooting() && this.power.status > 1 && this.hasAmmo() && this.creload >= 12){
-            this.creload = 0
-            quarkLightning.create(this, this.team, this.x, this.y, this.rotation + Mathf.range(-30, 30))
-            Fx.instHit.at(this.x, this.y)
-            Sounds.spark.at(this)
-        }
-        else{
-            if(this.creload < 10){this.creload += 1} 
-        }
-    },
-});
-
 
 // end quark
 
