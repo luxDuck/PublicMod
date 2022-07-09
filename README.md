@@ -20,9 +20,11 @@ Please try to help other contributors if they need help with coding!
 
 [@luxDuck](github.com/luxduck) - Creator
 
-[@12three7](github.com/12three7) - Has recently accepted invite
+[@12three7](github.com/12three7)
 
-[@WillBrAfton](github.com/WillBrAfton) - Awaiting response to invite
+[@WillBrAfton](github.com/WillBrAfton)
+
+[@kapzduke](github.com/kapzduke)
 
 # Banned
 
