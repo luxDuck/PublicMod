@@ -20,7 +20,7 @@ Please try to help other contributors if they need help with coding!
 
 luxDuck - Creator
 
-12three7 - Has not accepted invite yet
+12three7 - Has not accepted invite yet // update 9/7/22, i have accepted your invitation
 
 # Banned
 
