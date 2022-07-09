@@ -20,7 +20,7 @@ Please try to help other contributors if they need help with coding!
 
 [@luxDuck](github.com/luxduck) - Creator
 
-[@12three7](github.com/12three7) - Has not accepted invite yet // update 9/7/22, i have accepted your invitation - 1237
+[@12three7](github.com/12three7) - Has recently accepted invite
 
 # Banned
 
