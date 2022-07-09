@@ -1,0 +1,9 @@
+temperature: 4.6
+viscosity: 1.2
+heatCapacity: 0
+explosiveness: 0.3
+name: Magma
+description: Molten rock extracted from deep in the planet.
+effect: melting
+color: ff7d3c
+research: e
