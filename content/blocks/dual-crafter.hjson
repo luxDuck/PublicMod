@@ -1,0 +1,22 @@
+craftTime: 80
+craftEffect: smeltsmoke
+hasPower: true
+hasItems: true
+size: 3
+name: Dual Crafter
+description: '''
+By luxDuck. Can crystalize cryofluid and slag, or can mix magmite and cryolite into dualium.
+'''
+hasLiquids: true
+category: crafting
+requirements: [
+lead/4000
+silicon/120
+graphite/300
+titanium/2000
+phase-fabric/200
+]
+size: 2
+liquidCapacity: 12
+itemCapacity: 12
+research: cryofluid-mixer
