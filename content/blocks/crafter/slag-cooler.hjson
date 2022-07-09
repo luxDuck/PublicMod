@@ -1,6 +1,5 @@
 type: GenericCrafter
 size: 2
-drawer: drawRotator
 craftTime: 30
 name: Slag Cooler
 description: By luxDuck. Cools down slag back to scrap.
