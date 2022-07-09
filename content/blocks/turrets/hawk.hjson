@@ -1,0 +1,18 @@
+targetAir: true
+reloadTime: 180
+shootSound: release
+powerUse: 6.2
+name: Hawk
+description: By luxDuck. An upgrade to the Crow. Fires an orb that slowly gets bigger, then explodes.
+shootShake: 5
+size: 3
+category: turret
+heatColor: ff0000
+research: crow
+requirements: [
+  copper/250
+  lead/500
+  graphite/1000
+  titanium/3000
+  silicon/1050
+]
