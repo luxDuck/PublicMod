@@ -1,6 +1,8 @@
 type: GenericCrafter
 size: 2
-drawer: drawAnimation
+drawer: {
+  type: drawAnimation
+}
 craftTime: 90
 name: Sand Compressor
 description: By luxDuck. Compresses sand into scrap.
