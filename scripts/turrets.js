@@ -234,5 +234,44 @@ const quark = extend(PowerTurret, "quark", {
 });
 
 // end quark
+// golden eagle
+
+/*
+
+const goldEagleBeam = extend(LaserBulletType, {
+    colors : [Color.valueOf("e56666"),Color.valueOf("e78888"),Color.valueOf("ffffff")],
+    hitEffect : Fx.hitMeltdown,
+    despawnEffect : Fx.none,
+    damage: 30,
+    hitSize : 16,
+    lifetime : 36,
+    length : 180,
+    width : 7,
+    sideLength: 0,
+    sideWidth: 0,
+    sideAngle: 0,
+});
+
+const goldEagle = extend(PowerTurret, "crow", {});
+crow.buildType = () => extend(PowerTurret.PowerTurretBuild, crow, {
+    creload : 0,
+    updateTile(){
+        this.super$updateTile();
+
+        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 30){
+            this.creload = 0
+            goldEagleBeam.create(this, this.team, this.x + Mathf.range(-6, 6), this.y + Mathf.range(-6, 6), this.rotation)
+            Fx.blastExplosion.at(this.x, this.y)
+            Sounds.laser.at(this)
+        }
+        else{
+            if(this.creload < 7){this.creload += 1} 
+        }
+    },
+});
+
+*/
+
+// end golden eagle
 
 // end luxDuck's content
