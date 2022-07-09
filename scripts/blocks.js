@@ -1,6 +1,3 @@
-const multiTurretLib = require("multiTurretType");
-const multiCrafterLib = require("multiCrafterType");
-
 // effects
 
 const redBlast = new Effect(40, 100, e => {
@@ -195,87 +192,5 @@ const vulture = extend(PowerTurret, "vulture", {
 });
 
 // end vulture
-// duality
-
-const coldBolt = extend(BasicBulletType, {
-  speed: 2,
-  damage: 30,
-  status: Status.freezing,
-  statusDuration: 120,
-  width: 3.5,
-  height: 4.5,
-  homingPower: 0.6,
-  frontColor: Color.valueOf("ffffff"),
-  backColor: Color.valueOf("80a9ff"),
-  lifetime: 50,
-});
-
-const coldOrb = multiTurretLib.newWeapon(coldBolt, "publicmod-duality-cold");
-unoMount.reloadTime = 40;
-unoMount.ammoPerShot = 1;
-unoMount.x = -2.75;
-unoMount.y = 2.75;
-unoMount.shootY = 13/4;
-unoMount.recoilAmount = 1;
-unoMount.range = 9 * 8;
-unoMount.title = "Cold Plasma Orb"
-
-const hotBolt = extend(BasicBulletType, {
-  speed: 2,
-  damage: 60,
-  status: Status.melting,
-  statusDuration: 120,
-  width: 3.5,
-  height: 4.5,
-  homingPower: 0.6,
-  frontColor: Color.valueOf("ffffff"),
-  backColor: Color.valueOf("e56666"),
-  lifetime: 50,
-});
-
-const hotOrb = multiTurretLib.newWeapon(coldBolt, "publicmod-duality-hot");
-unoMount.reloadTime = 40;
-unoMount.ammoPerShot = 1;
-unoMount.x = 2.75;
-unoMount.y = 2.75;
-unoMount.shootY = 13/4;
-unoMount.recoilAmount = 1;
-unoMount.range = 9 * 8;
-unoMount.title = "Hot Plasma Orb"
-
-const dualityWeapons = [coldOrb, hotOrb]
-
-const dualityShot = extend(BasicBulletType, {
-  ammoMultiplier: 45,
-  speed: 2.5,
-  damage: 9,
-  width: 5.5,
-  height: 7,
-  lifetime: 60,
-  shootEffect: Fx.purpleBlast,
-  smokeEffect: Fx.smokeCloud,
-  frontColor: Color.valueOf("ffffff"),
-  backColor: Color.valueOf("985bb0"),
-  despawned(b){
-        for(let i = 0; i < 5; i++){
-            coldBolt.create(b, b.x, b.y, b.rotation() + Mathf.range(-50, 50), 1, 1);
-        }
-      for(let i = 0; i < 5; i++){
-            hotBolt.create(b, b.x, b.y, b.rotation() + Mathf.range(-50, 50), 1, 1);
-        }
-    }
-});
-
-const duality = multiTurretLib.newMultiTurret("duality", dualityWeapons, Items.titanium, mainBullet, 80, 20, "duality");
-duality.size = 2;
-duality.range = 15 * 8;
-duality.maxAmmo = 225;
-duality.ammoPerShot = 12;
-duality.recoil = 2;
-duality.reloadTime = 21;
-duality.requirements = ItemStack.with(Items.copper, 135, Items.lead, 75, Items.graphite, 80, Items.silicon, 50);
-duality.category = Category.turret;
-
-// end duality
 
 // end luxDuck's content
