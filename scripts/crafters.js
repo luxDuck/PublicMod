@@ -10,7 +10,7 @@ const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericC
             items:[publicmod-item-cryolite/1],
         },
     craftTime: 80
-    }
+    };
     {
         input:{
             liquids: [publicmod-liquid-magma/0.5],
@@ -20,7 +20,7 @@ const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericC
             items:[publicmod-item-magmite/1],
         },
     craftTime: 80
-    }
+    };
     {
         input:{
             items: [publicmod-item-cryolite/3, publicmod-item-magmite/3, lead/6],
@@ -30,7 +30,7 @@ const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericC
             items:[publicmod-item-dualium/1],
         },
     craftTime: 160
-    }
+    };
 ],{
     },
 function Extra() {
