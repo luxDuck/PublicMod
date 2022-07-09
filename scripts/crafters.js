@@ -3,31 +3,31 @@ const multiLib=require("multi-lib/library");
 const dualCrafter = multiLib.MultiCrafter(GenericCrafter,GenericCrafter.GenericCrafterBuild,"dual-crafter",[
     {
         input:{
-            liquids: [cryofluid/0.5],
+            liquids: ["cryofluid/0.5"],
             power: 0.6,
         },
         output:{
-            items:[publicmod-item-cryolite/1],
+            items:["publicmod-item-cryolite/1"],
         },
     craftTime: 80
-    };
+    },
     {
         input:{
-            liquids: [publicmod-liquid-magma/0.5],
+            liquids: ["publicmod-liquid-magma/0.5"],
             power: 0.6,
         },
         output:{
-            items:[publicmod-item-magmite/1],
+            items:["publicmod-item-magmite/1"],
         },
     craftTime: 80
-    };
+    },
     {
         input:{
-            items: [publicmod-item-cryolite/3, publicmod-item-magmite/3, lead/6],
+            items: ["publicmod-item-cryolite/3", "publicmod-item-magmite/3", "lead/6"],
             power: 2,
         },
         output:{
-            items:[publicmod-item-dualium/1],
+            items:["publicmod-item-dualium/1"],
         },
     craftTime: 160
     };
