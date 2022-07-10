@@ -18,13 +18,13 @@ Please try to help other contributors if they need help with coding!
 
 # Contributors
 
-[@luxDuck](github.com/luxduck) - Creator
+[@luxDuck](https://github.com/luxduck) - Creator
 
-[@12three7](github.com/12three7)
+[@12three7](https://github.com/12three7)
 
-[@WillBrAfton](github.com/WillBrAfton)
+[@WillBrAfton](https://github.com/WillBrAfton)
 
-[@kapzduke](github.com/kapzduke)
+[@kapzduke](https://github.com/kapzduke)
 
 # Banned
 
