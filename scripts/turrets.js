@@ -279,6 +279,7 @@ const goldEagleOrb = extend(MissileBulletType, {
 });
 
 const goldEagle = extend(PowerTurret, "golden-eagle", {});
+goldEagle.shootType = goldEagleOrb;
 goldEagle.buildType = () => extend(PowerTurret.PowerTurretBuild, goldEagle, {
     creload : 0,
     updateTile(){
