@@ -1,0 +1,26 @@
+{
+	"name": "Golden Eagle",
+	"description": "By luxDuck. An upgrade to Vulture. Fires a big accelerating plasma orb with small lasers while reloading.",
+	"size": 2,
+	"health": 2050,
+	"reloadTime" : 220,
+	"range": 200,
+	"shootSound": "laser",
+	"shootDuration" : 40,
+	"shootShake": 6,
+	"shots": 1,
+	"velocityInaccuracy": 0.1,
+	"recoilAmount" : 4,
+	"shootLength": 0,
+	"powerUse": 24,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"category": "turret",
+	"research": "vulture",
+	"requirements": [ 
+		{ "item": "thorium", "amount": 800 },
+		{ "item": "phase-fabric", "amount": 300 },
+		{ "item": "titanium", "amount": 500 },
+		{ "item": "lead", "amount": 400 }
+	]
+}
