@@ -1,7 +1,7 @@
 {
 	"name": "Golden Eagle",
 	"description": "By luxDuck. An upgrade to Vulture. Fires a big accelerating plasma orb with small lasers while reloading.",
-	"size": 2,
+	"size": 5,
 	"health": 2050,
 	"reloadTime" : 220,
 	"range": 200,
