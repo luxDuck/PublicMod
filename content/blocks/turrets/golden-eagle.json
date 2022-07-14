@@ -5,7 +5,7 @@
 	"health": 2050,
 	"reloadTime" : 220,
 	"range": 200,
-	"shootSound": "laser",
+	"shootSound": "laserblast",
 	"shootDuration" : 40,
 	"shootShake": 6,
 	"shots": 1,
