@@ -263,7 +263,7 @@ const goldEagleOrb = extend(MissileBulletType, {
     pierce : true,
 
     trailColor: Color.valueOf("e56666"),
-    trailWidth: 3,
+    trailWidth: 6,
     trailLength: 30,
     weaveScale: 0,
     weaveMag: 0,
@@ -287,7 +287,7 @@ goldEagle.buildType = () => extend(PowerTurret.PowerTurretBuild, goldEagle, {
 
         if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 14){
             this.creload = 0
-            goldEagleBeam.create(this, this.team, this.x + Mathf.range(-6, 6), this.y + Mathf.range(-6, 6), this.rotation + Mathf.range(-45, 45))
+            goldEagleBeam.create(this, this.team, this.x + Mathf.range(-6, 6), this.y + Mathf.range(-6, 6), this.rotation + Mathf.range(-20, 20))
             Fx.blastExplosion.at(this.x, this.y)
             Sounds.laser.at(this)
         }
