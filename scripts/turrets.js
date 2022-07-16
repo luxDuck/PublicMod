@@ -322,16 +322,13 @@ const rimL = extend(BasicBulletType, {
     sprite: "circle-bullet",
     pierce : true,
 
-    weaveScale: 0,
-    weaveMag: 0,
-    trailChance: 1,
     hitEffect: Fx.none,
     despawnEffect: Fx.none,
     frontColor : Color.valueOf("00000000"),
     backColor  : Color.valueOf("00000000"),
 
     despawned(b){
-        rimBeam.create(b, b.x, b.y, b.rotation() + 90 180, 1, 1);
+        rimBeam.create(b, b.x, b.y, b.rotation() + 90, 1, 1);
     }
 });
 
@@ -344,16 +341,14 @@ const rimR = extend(BasicBulletType, {
     lifetime : 10,
     sprite: "circle-bullet",
     pierce : true,
-    weaveScale: 0,
-    weaveMag: 0,
-    trailChance: 1,
+
     hitEffect: Fx.none,
     despawnEffect: Fx.none,
     frontColor : Color.valueOf("00000000"),
     backColor  : Color.valueOf("00000000"),
 
     despawned(b){
-        rimBeam.create(b, b.x, b.y, b.rotation() - 90 180, 1, 1);
+        rimBeam.create(b, b.x, b.y, b.rotation() - 90, 1, 1);
     }
 });
 
