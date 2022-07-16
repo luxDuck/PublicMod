@@ -4,6 +4,7 @@ name: Sand Compressor
 description: Presses sand into scrap metal.
 details: not the inverse pulverizer
 hasItems: true
+hasLiquids: false
 craftEffect: none
 drawer: drawAnimation
 consumes: {
