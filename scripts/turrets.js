@@ -308,7 +308,7 @@ const rimBeam = extend(LaserBulletType, {
     hitSize : 32,
     lifetime : 20,
     length : 120,
-    width : 30,
+    width : 8,
     sideAngle: 0,
 });
 
@@ -376,7 +376,7 @@ const rimOrb = extend(MissileBulletType, {
 });
 
 const rim = extend(PowerTurret, "rim", {});
-rim.shootType = goldEagleOrb;
+rim.shootType = rimOrb;
 rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
     creload : 0,
     side: "l",
