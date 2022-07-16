@@ -4,19 +4,20 @@ Star the mod and I will add you as a contributor.
 <details><summary><b>Rules for contributors</b></summary>
   <br>
     <p>
-    Only delete or edit content if you have permission, or if you made the content.<br>Action for breaking rule: <strong>Warning</strong>
+    Only delete or edit content if you have permission, or if you made the content.<br>Action for breaking rule: <strong>Warning.</strong>
     <br>
-    Do not make malicious content, or content that ruins gameplay. <br> Action for breaking rule: <strong>Instant ban</strong>
-
-    Inside the description of your content, please label your username. <code>e.g: By randomcoder777</code>. <br>
-      Action for breaking rule: Friendly reminder to add     your username
-    <br>
+    Do not make malicious content, or content that ruins gameplay. <br> Action for breaking rule: <strong>Instant ban.</strong>
+    </p>
+    <p>
+      Inside the description of your content, please label your username. e.g: <code>By randomcoder777</code>. <br>
+      Action for breaking rule: Friendly reminder to add your username
+      <br>
       <code>.json</code>, <code>.hjson</code>, and <code>.js</code> are welcome in this mod! <br>
 
-    Please try to help other contributors if they need help with coding!
-  <br>
-    4 Warnings = Ban!
-    </p>
+      Please try to help other contributors if they need help with coding!
+    <br>
+    4 Warnings = <strong>Ban!</strong>
+  </p>
 </details>
 
 <details><summary><b>Contributors</b></summary>
