@@ -25,3 +25,7 @@ Please try to help other contributors if they need help with coding!
 # Banned
 
 Nobody!
+
+# Random stuff that nobody cares about
+
+![dingus](https://user-images.githubusercontent.com/108199623/179338705-c4d2e3fd-ebe2-4516-ae56-47e23e13bd61.png)
