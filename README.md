@@ -12,9 +12,8 @@ Star the mod and I will add you as a contributor.
       Inside the description of your content, please label your username. e.g: <code>By randomcoder777</code>. <br>
       Action for breaking rule: Friendly reminder to add your username
       <br>
-      <code>.json</code>, <code>.hjson</code>, and <code>.js</code> are welcome in this mod! <br>
-
-      Please try to help other contributors if they need help with coding!
+      <code>.json</code>, <code>.hjson</code>, and <code>.js</code> are welcome in this mod<br><br>
+      <strong>Please try to help other contributors if they need help with coding!<strong>
     <br>
     4 Warnings = <strong>Ban!</strong>
   </p>
