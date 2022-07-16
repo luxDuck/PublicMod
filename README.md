@@ -21,9 +21,9 @@ Star the mod and I will add you as a contributor.
 <details><summary><b>Contributors</b></summary>
   <br>
   <ul>
-    [@luxDuck](https://github.com/luxduck) - Creator
+    luxDuck (https://github.com/luxduck) - Creator
 
-    [@12three7](https://github.com/12three7)
+    12three7 (https://github.com/12three7)
   </ul>
 </details>
 
