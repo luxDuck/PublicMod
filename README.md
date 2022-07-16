@@ -22,10 +22,6 @@ Please try to help other contributors if they need help with coding!
 
 [@12three7](https://github.com/12three7)
 
-[@WillBrAfton](https://github.com/WillBrAfton)
-
-[@kapzduke](https://github.com/kapzduke)
-
 # Banned
 
 Nobody!
