@@ -1,4 +1,4 @@
-const effectLib = require("effects");
+const effectLib = require("libraries/effects");
 
 // luxDuck's content
 
