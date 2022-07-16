@@ -1,5 +1,4 @@
-const libraries = require("libraries");
-const effectLib = libraries.effects;
+const effectLib = require("libraries/effects");
 
 // luxDuck's content
 
@@ -392,14 +391,14 @@ rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
                     this.creload = 0
                     rimL.create(this, this.team, this.x, this.y, this.rotation - 90)
                     Sounds.laser.at(this)
-                    Fx.hitLancer.at(this)
+                    effectLib.blueBlast.at(this)
             }
             else{
                 this.side = "l"
                 this.creload = 0
                 rimR.create(this, this.team, this.x, this.y, this.rotation + 90)
                 Sounds.laser.at(this)
-                Fx.hitLancer.at(this)
+                effectLib.blueBlast.at(this)
             }
         }
         else{
