@@ -372,7 +372,7 @@ const rimOrb = extend(MissileBulletType, {
     weaveMag: 0,
     trailChance: 1,
     hitEffect: effectLib.blueBlast,
-    despawnEffect: Fx.massiveExplosion,
+    despawnEffect: effectLib.blueBlast,
     frontColor : Color.valueOf("8aa3f4"),
     backColor  : Color.valueOf("8aa3f4"),
 });
