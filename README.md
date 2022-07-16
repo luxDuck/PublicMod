@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png" alt="" width="200" height="200" align="center">
+<img src="https://user-images.githubusercontent.com/108199623/178052696-e9840fc7-573d-4a50-98c8-007b756a2da4.png" alt="" width="200" height="200" align="center">
 
 Star the mod and I will add you as a contributor.
 
@@ -28,4 +28,4 @@ Nobody!
 
 # Random stuff that nobody cares about
 
-![dingus](https://user-images.githubusercontent.com/108199623/179338705-c4d2e3fd-ebe2-4516-ae56-47e23e13bd61.png)
+<img src="https://user-images.githubusercontent.com/108199623/179338705-c4d2e3fd-ebe2-4516-ae56-47e23e13bd61.png" alt="" width="200" height="200" align="center">
