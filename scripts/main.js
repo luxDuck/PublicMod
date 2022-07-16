@@ -1,2 +1,1 @@
 require("turrets");
-require("crafters");
