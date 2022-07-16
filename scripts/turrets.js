@@ -318,7 +318,7 @@ const rimL = extend(BasicBulletType, {
 
     damage : 0,
     speed : 1,
-    lifetime : 10,
+    lifetime : 5,
     sprite: "circle-bullet",
     pierce : true,
 
@@ -338,7 +338,7 @@ const rimR = extend(BasicBulletType, {
 
     damage : 0,
     speed : 1,
-    lifetime : 10,
+    lifetime : 5,
     sprite: "circle-bullet",
     pierce : true,
 
