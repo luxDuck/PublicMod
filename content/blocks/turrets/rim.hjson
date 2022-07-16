@@ -1,0 +1,18 @@
+targetAir: true
+size: 2
+health: 1450
+reloadTime: 180
+range: 150
+shootSound: railgun
+powerUse: 4.7
+name: Rim
+description: By luxDuck. Fires a huge energy ball and lasers on the side.
+shootShake: 4
+category: turret
+research: cyclone
+requirements: [
+  copper/100
+  lead/220
+  graphite/175
+  silicon/500
+]
