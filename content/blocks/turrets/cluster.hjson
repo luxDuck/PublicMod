@@ -1,8 +1,6 @@
 type: ItemTurret
 size: 2
 targetAir: false
-name: Cluster
-description: Fires a cluster of artillery shells.
 range: 240
 health: 500
 inaccuracy: 7
