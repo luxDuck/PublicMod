@@ -1,3 +1,5 @@
+const effectLib = require("effects");
+
 // luxDuck's content
 
 // rip
@@ -357,7 +359,7 @@ const rimOrb = extend(MissileBulletType, {
     height: 6,
 
     damage : 175,
-    speed : 0.5,
+    speed : 2,
     lifetime : 100,
     homingPower: 2.5,
     sprite: "circle-bullet",
@@ -369,7 +371,7 @@ const rimOrb = extend(MissileBulletType, {
     weaveScale: 0,
     weaveMag: 0,
     trailChance: 1,
-    hitEffect: Fx.massiveExplosion,
+    hitEffect: effectLib.blueBlast,
     despawnEffect: Fx.massiveExplosion,
     frontColor : Color.valueOf("8aa3f4"),
     backColor  : Color.valueOf("8aa3f4"),
