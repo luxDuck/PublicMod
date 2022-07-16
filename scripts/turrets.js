@@ -298,5 +298,118 @@ goldEagle.buildType = () => extend(PowerTurret.PowerTurretBuild, goldEagle, {
 });
 
 // end golden eagle
+// rim
+
+const rimBeam = extend(LaserBulletType, {
+    colors : [Color.valueOf("6974c4"),Color.valueOf("8aa3f4"),Color.valueOf("ffffff")],
+    hitEffect : Fx.hitLancer,
+    damage: 300,
+    absorbable: false,
+    hitSize : 32,
+    lifetime : 20,
+    length : 120,
+    width : 30,
+    sideAngle: 0,
+});
+
+const rimL = extend(BasicBulletType, {
+    width : 1,
+    height: 1,
+
+    damage : 0,
+    speed : 1,
+    lifetime : 10,
+    sprite: "circle-bullet",
+    pierce : true,
+
+    weaveScale: 0,
+    weaveMag: 0,
+    trailChance: 1,
+    hitEffect: Fx.none,
+    despawnEffect: Fx.none,
+    frontColor : Color.valueOf("00000000"),
+    backColor  : Color.valueOf("00000000"),
+
+    despawned(b){
+        rimBeam.create(b, b.x, b.y, b.rotation() + 90 180, 1, 1);
+    }
+});
+
+const rimR = extend(BasicBulletType, {
+    width : 1,
+    height: 1,
+
+    damage : 0,
+    speed : 1,
+    lifetime : 10,
+    sprite: "circle-bullet",
+    pierce : true,
+    weaveScale: 0,
+    weaveMag: 0,
+    trailChance: 1,
+    hitEffect: Fx.none,
+    despawnEffect: Fx.none,
+    frontColor : Color.valueOf("00000000"),
+    backColor  : Color.valueOf("00000000"),
+
+    despawned(b){
+        rimBeam.create(b, b.x, b.y, b.rotation() - 90 180, 1, 1);
+    }
+});
+
+const rimOrb = extend(MissileBulletType, {
+    width : 6,
+    height: 6,
+
+    damage : 175,
+    speed : 0.5,
+    lifetime : 100,
+    homingPower: 2.5,
+    sprite: "circle-bullet",
+    pierce : true,
+
+    trailColor: Color.valueOf("8aa3f4"),
+    trailWidth: 3,
+    trailLength: 30,
+    weaveScale: 0,
+    weaveMag: 0,
+    trailChance: 1,
+    hitEffect: Fx.massiveExplosion,
+    despawnEffect: Fx.massiveExplosion,
+    frontColor : Color.valueOf("8aa3f4"),
+    backColor  : Color.valueOf("8aa3f4"),
+});
+
+const rim = extend(PowerTurret, "rim", {});
+rim.shootType = goldEagleOrb;
+rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
+    creload : 0,
+    side: "l",
+    updateTile(){
+        this.super$updateTile();
+
+            if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && this.creload >= 14){
+                if(this.side == "l"){
+                    this.side = "r"
+                    this.creload = 0
+                    ripL.create(this, this.team, this.x, this.y, this.rotation - 90)
+                    Sounds.laser.at(this)
+                    Fx.hitLancer.at(this)
+            }
+            else{
+                this.side = "l"
+                this.creload = 0
+                ripR.create(this, this.team, this.x, this.y, this.rotation + 90)
+                Sounds.laser.at(this)
+                Fx.hitLancer.at(this)
+            }
+        }
+        else{
+            if(this.creload < 14){this.creload += 1} 
+        }
+    },
+});
+
+// end rim
 
 // end luxDuck's content
