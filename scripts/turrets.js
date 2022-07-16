@@ -387,14 +387,14 @@ rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
                 if(this.side == "l"){
                     this.side = "r"
                     this.creload = 0
-                    ripL.create(this, this.team, this.x, this.y, this.rotation - 90)
+                    rimL.create(this, this.team, this.x, this.y, this.rotation - 90)
                     Sounds.laser.at(this)
                     Fx.hitLancer.at(this)
             }
             else{
                 this.side = "l"
                 this.creload = 0
-                ripR.create(this, this.team, this.x, this.y, this.rotation + 90)
+                rimR.create(this, this.team, this.x, this.y, this.rotation + 90)
                 Sounds.laser.at(this)
                 Fx.hitLancer.at(this)
             }
