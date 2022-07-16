@@ -8,8 +8,6 @@ hasLiquids: true
 hasItems: true
 pumpAmount: 0.05
 updateEffect: pulverize
-name: Magma Extractor
-description: Drills deep into the mantle, and pulls out magma. Requires cryofluid for coolant.
 updateEffectChance: 0.1
 consumes: {
 power: 5.3
