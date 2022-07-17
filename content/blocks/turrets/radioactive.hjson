@@ -3,10 +3,35 @@ size: 2
 health: 1450
 reloadTime: 180
 range: 150
-shootSound: shotgun
+shootSound: shootBig
 heatColor: bf92f9
 consumes: {
   power: 5.3
+}
+ammoTypes: {
+thorium: {
+type: ArtilleryBulletType
+speed: 2.5
+damage: 360
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+knockback: 0.9
+lifetime: 80
+width: 15
+height: 15
+collidesTiles: false
+splashDamageRadius: 44
+splashDamage: 250
+backColor: bf92f9
+frontColor: ffffff
+lightning: 2
+lightningLength: 7
+lightningColor: bf92f9
+lightningDamage: 90
+trailColor: bf92f9
+status: blasted
+statusDuration: 220
+}
 }
 shootShake: 3
 category: turret
