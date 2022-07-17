@@ -62,6 +62,22 @@ const yellowBlast = new Effect(40, 100, e => {
     }
 });
 
+const purpleBlast = new Effect(40, 100, e => {
+    Draw.color(Color.valueOf("bf92f9"));
+    Lines.stroke(e.fout() * 2);
+    Lines.circle(e.x, e.y, e.finpow() * 20);
+
+    Draw.color(Color.valueOf("bf92f9"));
+    for(let i = 0; i < 4; i++){
+        Drawf.tri(e.x, e.y, 6, 10 * e.fout(), i*90+45);
+    }
+
+    Draw.color();
+    for(let i = 0; i < 4; i++){
+        Drawf.tri(e.x, e.y, 3, 3 * e.fout(), i*90+45);
+    }
+});
+
 const smallThorBlastSparks = new Effect(40, 100, e => {
     Draw.color(Color.valueOf("bf92f9"));
     Lines.stroke(e.fout() * 2);
@@ -92,9 +108,10 @@ colorTo: Color.valueOf("bf92f990"),
 const smalThorBlast = new MultiEffect(smallThorBlastSmoke, smallThorBlastSparks);
 
 module.exports = {
-  redBlast: redBlast,
-  blueBlast: blueBlast,
-  greenBlast: greenBlast,
-  yellowBlast: yellowBlast,
-  smallThorBlast: smallThorBlast,
+    redBlast: redBlast,
+    blueBlast: blueBlast,
+    greenBlast: greenBlast,
+    yellowBlast: yellowBlast,
+    purpleBlast: purpleBlast,
+    smallThorBlast: smallThorBlast,
 }
