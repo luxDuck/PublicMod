@@ -1,4 +1,5 @@
-targetAir: true
+type: ItemTurret
+targetAir: false
 size: 2
 health: 1450
 reloadTime: 90
