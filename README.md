@@ -38,5 +38,7 @@ Star the mod and I will add you as a contributor.
   <br>
   <p>
     <img src="https://user-images.githubusercontent.com/108199623/179338705-c4d2e3fd-ebe2-4516-ae56-47e23e13bd61.png" alt="" width="200" height="200" align="center">
+    
+    whomst'd've'ly'yaint'nt'ed'ies's'y'es
   </p>
 </details>
