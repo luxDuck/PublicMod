@@ -429,6 +429,22 @@ setStats(){
         this.stats.add(Stat.ammo, StatValues.ammo(ObjectMap.of(this, radioactiveBolt)));
     },
 });
+radioactive.buildType = () => extend(ItemTurret.ItemTurretBuild, radioactive, {
+    creload : 0,
+    updateTile(){
+        this.super$updateTile();
+
+        if(this.isShooting() && this.power.status > 3 && this.hasAmmo() && this.creload >= 30){
+            this.creload = 0
+            radioactiveBolt.create(this, this.team, this.x, this.y, this.rotation)
+            effectLib.smallThorBlast.at(this.x, this.y)
+            Sounds.laser.at(this)
+        }
+        else{
+            if(this.creload < 30){this.creload += 1} 
+        }
+    },
+});
 
 // end radioactive
 
