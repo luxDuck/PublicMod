@@ -1,0 +1,20 @@
+targetAir: true
+size: 2
+health: 1450
+reloadTime: 180
+range: 150
+shootSound: shotgun
+heatColor: bf92f9
+consumes: {
+  power: 5.3
+}
+shootShake: 3
+category: turret
+research: cyclone
+requirements: [
+  copper/700
+  lead/250
+  graphite/1200
+  silicon/540
+  thorium/800
+]
