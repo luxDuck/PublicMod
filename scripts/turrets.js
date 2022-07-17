@@ -408,5 +408,28 @@ rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
 });
 
 // end rim
+// radioactive
+
+const radioactiveBolt = extend(LaserBoltBulletType, {
+    width: 3,
+    height: 10,
+    speed: 6,
+    lifetime: 30,
+    backColor: Color.valueOf("bf92f9"),
+    frontColor: Color.white,
+    damage: 120,
+    shootEffect: effectLib.smallThorBlast,
+    hitEffect: effectLib.purpleBlast,
+    despawnEffect: effectLib.purpleBlast,
+});
+
+const radioactive = extend(ItemTurret, "radioactive", {
+setStats(){
+        this.super$setStats();
+        this.stats.add(Stat.ammo, StatValues.ammo(ObjectMap.of(this, radioactiveBolt)));
+    },
+});
+
+// end radioactive
 
 // end luxDuck's content
