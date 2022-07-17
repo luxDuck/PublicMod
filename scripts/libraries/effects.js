@@ -78,7 +78,7 @@ const purpleBlast = new Effect(40, 100, e => {
     }
 });
 
-const smallThorBlastSparks = new Effect(40, 100, e => {
+const smallThorBlast = new Effect(40, 100, e => {
     Draw.color(Color.valueOf("bf92f9"));
     Lines.stroke(e.fout() * 2);
     Lines.circle(e.x, e.y, e.finpow() * 20);
@@ -93,19 +93,6 @@ const smallThorBlastSparks = new Effect(40, 100, e => {
         Drawf.tri(e.x, e.y, 3, 3 * e.fout(), i*25);
     }
 });
-
-const smallThorBlastSmoke = extend(ParticleEffect, {
-particles: 6,
-length: 65,
-cone: 360,
-lifetime: 30,
-sizeFrom: 8,
-sizeTo: 0,
-colorFrom: Color.valueOf("bf92f9"),
-colorTo: Color.valueOf("bf92f990"),
-});
-
-const smalThorBlast = new MultiEffect(smallThorBlastSmoke, smallThorBlastSparks);
 
 module.exports = {
     redBlast: redBlast,
