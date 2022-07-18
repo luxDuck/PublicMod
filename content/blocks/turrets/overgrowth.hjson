@@ -39,6 +39,7 @@ ammoTypes: {
     frontColor: 8a73c6
     backColor: 8a73c6
     trailColor: 8a73c6
+    trailChance: 1
     trailEffect: {
       type: ParticleEffect
       lifetime: 20
@@ -50,15 +51,15 @@ ammoTypes: {
     statusDuration: 180
     despawnEffect: {
       type: ParticleEffect
-      lifetime: 20
-      length: 12
+      lifetime: 28
+      length: 40
       colorFrom: 8a73c6
       colorTo: 8a73c6
     }
     hitEffect: {
       type: ParticleEffect
-      lifetime: 20
-      length: 12
+      lifetime: 28
+      length: 40
       colorFrom: 8a73c6
       colorTo: 8a73c6
     }
