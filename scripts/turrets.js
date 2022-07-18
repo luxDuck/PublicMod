@@ -408,5 +408,12 @@ rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
 });
 
 // end rim
+// radioactive
+
+const radioactive = extend(PowerTurret, "radioactive", {
+    shootEffect: effectLib.smallThorBlast,
+});
+
+// end radioactive
 
 // end luxDuck's content
