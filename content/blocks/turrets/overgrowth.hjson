@@ -51,18 +51,52 @@ ammoTypes: {
     status: spore-growth
     statusDuration: 180
     despawnEffect: {
-      type: ParticleEffect
-      lifetime: 28
-      length: 40
-      colorFrom: 8a73c6
-      colorTo: 8a73c6
+      type: MultiEffect
+      effects: [
+        {
+        type: ParticleEffect
+        lifetime: 28
+        length: 40
+        colorFrom: 8a73c6
+        colorTo: 8a73c6
+        }
+        {
+        type: ParticleEffect
+        line: true
+        lifetime: 17
+        length: 60
+        lenFrom: 5
+        lenTo: 2.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 8a73c6
+        colorTo: 8a73c6
+        }
+      ]
     }
     hitEffect: {
-      type: ParticleEffect
-      lifetime: 28
-      length: 40
-      colorFrom: 8a73c6
-      colorTo: 8a73c6
+      type: MultiEffect
+      effects: [
+        {
+        type: ParticleEffect
+        lifetime: 28
+        length: 40
+        colorFrom: 8a73c6
+        colorTo: 8a73c6
+        }
+        {
+        type: ParticleEffect
+        line: true
+        lifetime: 17
+        length: 60
+        lenFrom: 5
+        lenTo: 2.5
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 8a73c6
+        colorTo: 8a73c6
+        }
+      ]
     }
   }
 }
