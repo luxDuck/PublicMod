@@ -1,0 +1,70 @@
+type: ItemTurret
+health: 240
+targetHealing: true
+range: 120
+reloadTime: 35
+inaccuracy: 10
+shootEffect: {
+      type: ParticleEffect
+      particles: 25
+      lifetime: 45
+      length: 30
+      cone: 30
+      colorFrom: 8a73c6
+      colorTo: 8a73c660
+}
+smokeEffect: {
+      type: ParticleEffect
+      particles: 25
+      lifetime: 45
+      length: 30
+      cone: 30
+      colorFrom: a6a6a6
+      colorTo: a6a6a6a0
+}
+ammoUseEffect: none
+shootSound: spark
+ammoTypes: {
+  spore-pod: {
+    type: MissileBulletType
+    collidesTeam: true
+    healPercent: 4.3
+    damage: 24
+    speed: 2
+    lifetime: 60
+    ammoMultiplier: 1
+    weaveMag: 0
+    weaveScale: 0
+    frontColor: 8a73c6
+    backColor: 8a73c6
+    trailColor: 8a73c6
+    trailEffect: {
+      type: ParticleEffect
+      lifetime: 20
+      length: 12
+      colorFrom: 8a73c6
+      colorTo: 8a73c6
+    }
+    status: spore-growth
+    despawnEffect: {
+      type: ParticleEffect
+      lifetime: 20
+      length: 12
+      colorFrom: 8a73c6
+      colorTo: 8a73c6
+    }
+    hitEffect: {
+      type: ParticleEffect
+      lifetime: 20
+      length: 12
+      colorFrom: 8a73c6
+      colorTo: 8a73c6
+    }
+  }
+}
+category: turret
+research: duo
+requirements: [
+  copper/45
+  lead/20
+]
