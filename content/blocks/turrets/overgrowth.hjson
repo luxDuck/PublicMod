@@ -2,7 +2,7 @@ type: ItemTurret
 health: 240
 targetHealing: true
 range: 120
-reloadTime: 35
+reloadTime: 60
 inaccuracy: 10
 shootEffect: {
       type: ParticleEffect
@@ -46,6 +46,7 @@ ammoTypes: {
       colorTo: 8a73c6
     }
     status: spore-growth
+    statusDuration: 180
     despawnEffect: {
       type: ParticleEffect
       lifetime: 20
