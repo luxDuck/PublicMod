@@ -2,6 +2,7 @@ type: ItemTurret
 health: 240
 targetHealing: true
 range: 120
+heatColor: ffffff
 reloadTime: 60
 inaccuracy: 10
 shootEffect: {
@@ -16,8 +17,8 @@ shootEffect: {
 smokeEffect: {
       type: ParticleEffect
       particles: 25
-      lifetime: 45
-      length: 30
+      lifetime: 60
+      length: 53
       cone: 30
       colorFrom: a6a6a6
       colorTo: a6a6a6a0
