@@ -1,0 +1,16 @@
+damage: 0.3
+speedMultiplier: 0.73
+healthMultiplier: 0.82
+effectChance: 0.7
+name: Spore Growth
+description: Spores are slowly seeping into the cracks in the machinery, slowly taking over.
+effect: {
+  type: ParticleEffect
+  length: 5
+  particles: 7
+  lifetime: 60
+  sizeFrom: 2
+  sizeTo: 2
+  colorFrom: ac94e9
+  colorTo: ac94e990
+}
