@@ -410,7 +410,7 @@ rim.buildType = () => extend(PowerTurret.PowerTurretBuild, rim, {
 // end rim
 // radioactive
 
-const radioactive = extend(PowerTurret, "radioactive", {
+const radioactive = extend(ItemTurret, "radioactive", {
     shootEffect: effectLib.smallThorBlast,
 });
 
