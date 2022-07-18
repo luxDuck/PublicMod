@@ -28,6 +28,7 @@ shootSound: spark
 ammoTypes: {
   spore-pod: {
     type: MissileBulletType
+    sprite: circle-bullet
     collidesTeam: true
     healPercent: 4.3
     damage: 24
