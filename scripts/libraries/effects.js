@@ -90,7 +90,7 @@ const smallThorBlast = new Effect(40, 100, e => {
 
     Draw.color(Color.valueOf("bf92f9"));
     for(let i = 0; i < 3; i++){
-        Drawf.tri(e.x, e.y, 3, 3 * e.fout(), i*25-25);
+        Drawf.tri(e.x, e.y, 7, 3 * e.fout(), i*25-25);
     }
 });
 
