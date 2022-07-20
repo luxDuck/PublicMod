@@ -1,4 +1,4 @@
-type: ContinuousTurret
+type: ContinuousLiquidTurret
 targetAir: false
 reloadTime: 65
 range: 90
@@ -7,21 +7,23 @@ loopSound: pulse
 size: 1
 loopSoundVolume: 0.5
 shootType: {
-  type: PointLaserBulletType
-  damage: 80
-  hitColor: 73d188
-  color: 73d188
+    type: ContinuousFlameBulletType
+    damage: 80
+    colors: [62ae7f, 84f491, ffffff]
+    flareColor: 84f491
+    lightColor: 84f491
+    hitColor: 84f491
+    knockback: 0.33
+    pierceCap: 4
+    length: 70
 }
-powerUse: 3
-consumes: {
-  liquid: water/0.32
-}
+powerUse: 3.2
 shootShake: 1
 category: turret
-research: duo
+research: wave
 requirements: [
   copper/250
   lead/500
-  graphite/100
+  metaglass/100
   titanium/150
 ]
