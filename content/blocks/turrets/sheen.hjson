@@ -20,6 +20,7 @@ drawer: {
   
   parts: [
     RegionPart: {
+      region: "-blade"
       heatColor: ff0000
       progress: warmup
       mirror: true
