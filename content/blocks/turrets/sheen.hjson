@@ -9,6 +9,7 @@ shootType: {
   type: PointLaserBulletType
   damage: 80
   hitColor: 73d188
+  colors: [73d188, 73d188, ffffff]
 }
 powerUse: 3
 consumes: {
@@ -17,7 +18,7 @@ consumes: {
 drawer: {
   drawer: DrawTurret
   
-  parts: {
+  parts: [
     RegionPart: {
       heatColor: ff0000
       progress: warmup
@@ -26,7 +27,7 @@ drawer: {
       moveX: 0
       moveY: 4
     }
-  }
+  ]
 }
 shootShake: 1
 category: turret
