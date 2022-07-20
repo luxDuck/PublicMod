@@ -14,10 +14,14 @@ shootType: {
     lightColor: 84f491
     hitColor: 84f491
     knockback: 0.33
+    width: 7
     pierceCap: 4
-    length: 70
+    length: 90
 }
-powerUse: 3.2
+hasPower: true
+consumes: {
+  power: 3.6
+}
 shootShake: 1
 category: turret
 research: wave
