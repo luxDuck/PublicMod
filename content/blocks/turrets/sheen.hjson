@@ -1,4 +1,4 @@
-type: ContinuousLiquidTurret
+type: ContinuousTurret
 targetAir: false
 reloadTime: 65
 range: 90
