@@ -4,7 +4,7 @@ reloadTime: 65
 range: 90
 shootSound: none
 loopSound: pulse
-size: 2
+size: 1
 loopSoundVolume: 0.5
 shootType: {
   type: PointLaserBulletType
@@ -14,7 +14,7 @@ shootType: {
 }
 powerUse: 3
 consumes: {
-  liquid: water/1
+  liquid: water/0.32
 }
 shootShake: 1
 category: turret
