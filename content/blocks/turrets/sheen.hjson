@@ -4,6 +4,7 @@ reloadTime: 65
 range: 90
 shootSound: none
 loopSound: pulse
+size: 2
 loopSoundVolume: 0.5
 shootType: {
   type: PointLaserBulletType
