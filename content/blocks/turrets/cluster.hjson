@@ -29,9 +29,26 @@ ammoTypes: {
     trailLength: 16
     frontColor: ffffff
     backColor: e56666
+    status: burning
     despawnEffect: blastExplosion
   }
-  graphite: artilleryHeavy
+  graphite: {
+    type: ArtilleryBulletType
+    damage: 30
+    splashDamage: 33
+    splashDamageRadius: 28
+    speed: 3
+    lifetime: 80
+    width: 15
+    height: 17
+    hitShake: 1.5
+    trailColor: 4a4a4a
+    trailWidth: 6.5
+    trailLength: 16
+    frontColor: ffffff
+    backColor: 4a4a4a
+    despawnEffect: blastExplosion
+  }
   blast-compound: artilleryExplosive
 }
 category: turret
