@@ -15,21 +15,6 @@ powerUse: 3
 consumes: {
   liquid: water/3.5
 }
-drawer: {
-  drawer: DrawTurret
-  
-  parts: [
-    RegionPart: {
-      region: -blade
-      heatColor: ff0000
-      progress: warmup
-      mirror: true
-      under: false
-      moveX: 0
-      moveY: 4
-    }
-  ]
-}
 shootShake: 1
 category: turret
 research: duo
