@@ -9,11 +9,11 @@ shootType: {
   type: PointLaserBulletType
   damage: 80
   hitColor: 73d188
-  colors: [73d188, 73d188, ffffff]
+  color: 73d188
 }
 powerUse: 3
 consumes: {
-  liquid: water/3.5
+  liquid: water/1
 }
 shootShake: 1
 category: turret
