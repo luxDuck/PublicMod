@@ -14,7 +14,7 @@ shootSound: artillery
 shootShake: 0.75
 ammoUseEffect: casing2
 ammoTypes: {
-  graphite: {
+  pyratite: {
     type: ArtilleryBulletType
     damage: 30
     splashDamage: 33
@@ -24,11 +24,14 @@ ammoTypes: {
     width: 15
     height: 17
     hitShake: 1.5
-    frontColor: fd8e8e
-    backColor: ad4244
+    trailColor: e56666
+    trailWidth: 6.5
+    trailLength: 16
+    frontColor: ffffff
+    backColor: e56666
     despawnEffect: blastExplosion
   }
-  pyratite: artilleryIncendiary
+  graphite: artilleryHeavy
   blast-compound: artilleryExplosive
 }
 category: turret
