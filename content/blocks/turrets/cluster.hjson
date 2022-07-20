@@ -30,6 +30,8 @@ ammoTypes: {
     frontColor: ffffff
     backColor: e56666
     status: burning
+    makeFire: true
+    incendChance: 1
     despawnEffect: blastExplosion
   }
   graphite: {
@@ -49,7 +51,26 @@ ammoTypes: {
     backColor: 4a4a4a
     despawnEffect: blastExplosion
   }
-  blast-compound: artilleryExplosive
+  blast-compound: {
+    type: ArtilleryBulletType
+    damage: 30
+    splashDamage: 33
+    splashDamageRadius: 28
+    speed: 3
+    lifetime: 80
+    width: 15
+    height: 17
+    hitShake: 1.5
+    trailColor: e34444
+    trailWidth: 6.5
+    trailLength: 16
+    frontColor: ffffff
+    backColor: e34444
+    makeFire: true
+    incendChance: 0.3
+    status: blasted
+    despawnEffect: blastExplosion
+  }
 }
 category: turret
 research: hail
