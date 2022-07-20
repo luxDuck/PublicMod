@@ -18,7 +18,7 @@ drawer: {
   drawer: DrawTurret
   
   parts: {
-    RegionPart{
+    RegionPart: {
       heatColor: ff0000
       progress: warmup
       mirror: true
