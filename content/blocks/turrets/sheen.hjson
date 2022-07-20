@@ -1,0 +1,39 @@
+type: ContinuousTurret
+targetAir: false
+reloadTime: 65
+range: 90
+shootSound: none
+loopSound: pulse
+loopSoundVolume: 0.5
+shootType: {
+  type: PointLaserBulletType
+  damage: 80
+  hitColor: 73d188
+}
+powerUse: 3
+consumes: {
+  liquid: water/3.5
+}
+drawer: {
+  drawer: DrawTurret
+  
+  parts: {
+    RegionPart{
+      heatColor: ff0000
+      progress: warmup
+      mirror: true
+      under: false
+      moveX: 0
+      moveY: 4
+    }
+  }
+}
+shootShake: 1
+category: turret
+research: duo
+requirements: [
+  copper/250
+  lead/500
+  graphite/100
+  titanium/150
+]
