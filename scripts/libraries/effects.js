@@ -108,11 +108,6 @@ const strikerHit = new Effect(40, 100, e => {
     for(let i = 0; i < 8; i++){
         Drawf.tri(e.x, e.y, 3, 6 * e.fout(), i*90);
     }
-    
-    Draw.color(Color.valueOf("544deb"));
-    for(let i = 0; i < 12; i++){
-        Drawf.circle(e.x, e.y, 6 * e.fout(), 6 * e.fout(), i*25);
-    }
 });
 
 module.exports = {
