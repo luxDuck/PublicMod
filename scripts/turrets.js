@@ -416,4 +416,31 @@ const radioactive = extend(ItemTurret, "radioactive", {
 
 // end radioactive
 
+// striker
+
+const strikerOrb = extend(MissileBulletType, {
+    width : 6,
+    height: 6,
+
+    damage : 175,
+    speed : 2,
+    lifetime : 100,
+    homingPower: 2.5,
+    sprite: "circle-bullet",
+    pierce : true,
+
+    trailColor: Color.valueOf("8aa3f4"),
+    trailWidth: 3,
+    trailLength: 30,
+    weaveScale: 0,
+    weaveMag: 0,
+    trailChance: 1,
+    hitEffect: effectLib.strikerHit,
+    despawnEffect: effectLib.strikerHit,
+    frontColor : Color.valueOf("8aa3f4"),
+    backColor  : Color.valueOf("8aa3f4"),
+});
+
+// end striker
+
 // end luxDuck's content
