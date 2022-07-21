@@ -94,6 +94,27 @@ const smallThorBlast = new Effect(40, 100, e => {
     }
 });
 
+const strikerHit = new Effect(40, 100, e => {
+    Draw.color(Color.valueOf("544deb"));
+    Lines.stroke(e.fout() * 2);
+    Lines.circle(e.x, e.y, e.finpow() * 40);
+
+    Draw.color(Color.valueOf("544deb"));
+    for(let i = 0; i < 8; i++){
+        Drawf.tri(e.x, e.y, 6, 16 * e.fout(), i*90);
+    }
+
+    Draw.color();
+    for(let i = 0; i < 8; i++){
+        Drawf.tri(e.x, e.y, 3, 6 * e.fout(), i*90);
+    }
+    
+    Draw.color(Color.valueOf("544deb"));
+    for(let i = 0; i < 12; i++){
+        Drawf.circle(e.x, e.y, 6 * e.fout(), 6 * e.fout(), i*25);
+    }
+});
+
 module.exports = {
     redBlast: redBlast,
     blueBlast: blueBlast,
@@ -101,4 +122,5 @@ module.exports = {
     yellowBlast: yellowBlast,
     purpleBlast: purpleBlast,
     smallThorBlast: smallThorBlast,
+    strikerHit: strikerHit,
 }
